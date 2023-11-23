@@ -59,9 +59,9 @@ This is a basic Node.js REST API project that provides a foundation for building
   - Request:
     ```json
     {
-      "name": "John Doe",
-      "email": "john@example.com",
-      "password": "password123"
+      "name": "Ide Ide",
+      "email": "ide@gmail.com",
+      "password": "123456"
     }
     ```
   - Response:
@@ -78,7 +78,7 @@ This is a basic Node.js REST API project that provides a foundation for building
   - Request:
     ```json
     {
-      "email": "john@example.com",
+      "email": "ide@gmail.com",
       "password": "password123"
     }
     ```
