@@ -26,6 +26,12 @@ app.use((err, req, res, next) => {
     });
 });
 
+mongoose.connect(process.env.DATABASE).then((res) => {
+    console.log("Database connected");
+}).catch((err) => {
+    console.log(err);
+});
+
 
 app.listen(port, () => {
     console.log(`Server running at http://localhost:${port}`);
