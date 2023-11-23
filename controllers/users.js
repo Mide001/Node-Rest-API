@@ -1,9 +1,9 @@
 const UserModel = require("../models/user");
-const bcrypt = require("bcrypt");
+const bcrypt = require("bcrypt"); 
 const jwt = require("jsonwebtoken");
 
 module.exports = {
-    create: (req, res, next) => {
+    create: async (req, res, next) => {
         try {
             const user = await UserModel.create({
                 name: req.body.name, 
@@ -18,7 +18,7 @@ module.exports = {
     },
 
 
-    authenticate: (req, res, next) => {
+    authenticate: async (req, res, next) => {
         try {
             const userInfo = await UserModel.findOne({ email: req.body.email });
 
